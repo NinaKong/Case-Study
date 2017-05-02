@@ -1,0 +1,32 @@
+//
+// Buttons
+// --------------------------------------------------
+.btn {
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 7px 22px;
+    .transition(background-color 500ms ease-in-out);
+    &:focus {
+      outline-color: transparent;
+      outline: none;
+    }
+    &:hover {
+      .transition(background-color 500ms ease-in-out);
+    }
+}
+.btn-lg {
+    font-family: @headings-font-family-primary;
+    font-size: 18px;
+    padding: 11px 42px;
+}
+.btn-default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+
+.btn-secondary {
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+}

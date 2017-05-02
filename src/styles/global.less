@@ -1,0 +1,149 @@
+//
+// Global
+// --------------------------------------------------
+
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    color: @gray-base;
+}
+
+h1, h3 {
+    font-family: @headings-font-family-primary;
+}
+
+h1 { 
+    font-size: @font-size-h1; 
+    font-weight: 400;
+    color: @gray-darkest;
+    text-align: center;
+}
+h2, .h2 { 
+    font-size: @font-size-h2; 
+    font-weight: 600;
+    color: @gray-darkest;
+}
+h3 { 
+    font-size: @font-size-h3; 
+    font-weight: 400;
+    color: @gray-darkest;
+    margin: 34px 0 27px;
+}
+h4 { 
+    font-family: @headings-font-family-secondary;
+    font-size: @font-size-h4; 
+    font-weight: 400;
+    color: @gray-darker;
+    text-transform: uppercase;
+}
+a {
+    cursor: pointer; 
+    color: @link-secondary;
+}
+.price {
+    margin-top: 17px;
+    margin-bottom: 42px;
+    .h2 {
+        margin-right: 5px;
+    }
+}
+.promotions {
+    border-top: 1px solid @gray-light;
+    border-bottom: 1px solid @gray-light;
+    .promotions-item {
+        color: @brand-primary;
+        font-size: 18px;
+        &:first-child {
+            padding-top: 21px;
+        }
+        &:last-child {
+            padding-bottom: 21px;
+        }
+        span {
+            margin-left: 8px;
+        }
+    }
+}
+.numeric {
+    position: relative;
+    margin: 3rem 0;
+    .numeric-label {
+        top: 1.2rem;
+        left: 1rem;
+        position: absolute;
+        color: @gray-dark;
+    }
+    .numeric-btn-min {
+        top: .6rem;
+        left: 13.5rem;
+        position: absolute;
+        font-size: 2.9rem;
+        color: @gray-light;
+    }
+    .numeric-btn-plus {
+        top: .6rem;
+        left: 20rem;
+        position: absolute;
+        font-size: 2.9rem;
+        color: @gray-light;
+    }
+    .numeric-input {
+        padding-left: 17.5rem;
+        width: 23.8rem;
+        height: 4rem;
+        color: @gray-darkest;
+        border: 1px solid @input-border;
+        font-size: 1.8rem;
+        font-family: @headings-font-family-primary;
+    }
+}
+
+.btn-section {
+    .btn-secondary {
+        width: 48.5%;
+        margin-right: 12px;
+    }
+    .btn-primary {
+        width: 48.5%;
+    }
+    .link-instore {
+        font-family: @headings-font-family-primary;
+        font-weight: 600;
+        margin-top: 4px;
+        text-align: center;
+        clear: both;
+    }
+    .return {
+        padding: 30px 0;
+        display: table;
+        clear: both;
+        font-family: @headings-font-family-primary;
+        .return-title {
+            display: table-cell;
+            vertical-align: middle;
+            width: 74px;
+            padding-right: 15px;
+            font-size: 20px;
+        }
+        .return-content {
+            padding-left: 15px;
+            border-left: 1px solid @gray-light;
+            float: left;
+            font-size: 10px;
+        }
+    }
+    .btn-default {
+        width: 31.5%;
+        margin-right: 12px;
+    }
+    .btn-share {
+        margin-right: 0;
+    }
+}
+.item-description {
+    padding-left: 14px;
+    li {
+       line-height: 28px;
+       font-size: 14px;
+    }
+}

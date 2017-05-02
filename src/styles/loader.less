@@ -1,0 +1,55 @@
+//
+// Loader
+// --------------------------------------------------
+
+#loader { 
+  -webkit-transition:opacity 300ms;
+  transition:opacity 300ms;
+  z-index:1000;
+  position:fixed; 
+  top:0;
+  left:0; 
+  width:100%; 
+  height:100%; 
+  padding:0; 
+  margin:0;
+  background:none;
+  opacity:1;
+  pointer-events:auto;
+}
+
+#loader:before {
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;
+  position:absolute; 
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:100%; 
+  content:"";
+  background-size:80px auto; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2221%22%20height%3D%2221%22%20viewBox%3D%220%200%2021%2021%22%3E%3Cpath%20d%3D%22M10.5%200C4.7%200%200%204.702%200%2010.5%200%2016.3%204.7%2021%2010.5%2021%2016.303%2021%2021%2016.3%2021%2010.5%2021%204.702%2016.302%200%2010.5%200m0%2017.55c-3.894%200-7.05-3.156-7.05-7.05%200-3.894%203.156-7.05%207.05-7.05%203.895%200%207.05%203.156%207.05%207.05%200%203.894-3.154%207.05-7.05%207.05%22%20fill%3D%22%23cc0000%22%2F%3E%3Cpath%20d%3D%22M10.5%206.9c-1.988%200-3.6%201.61-3.6%203.6%200%201.988%201.612%203.6%203.6%203.6s3.6-1.61%203.6-3.6-1.612-3.6-3.6-3.6%22%20fill%3D%22%23cc0000%22%2F%3E%3C%2Fsvg%3E);
+  -webkit-animation-name: loader;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.25s;
+  -webkit-animation-play-state:running;
+  animation-name: loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1.25s;
+  animation-play-state:running;
+}
+
+@keyframes loader {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes loader {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,80 @@
+//
+// Rating
+// --------------------------------------------------
+.overallRating {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 20px 5px 20px 15px;
+  overflow: hidden;
+  color: @gray-darkest;
+  position: relative;
+  .col-md-6 {
+      position: relative;
+      .stars-before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: @carousel-color;
+        font-size: 1.9rem;
+      }
+      .stars-after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: @brand-primary;
+        overflow: hidden;
+        font-size: 1.9rem;
+      }
+      .overallRating-word {
+        position: absolute;
+        top: .5rem;
+        left: 11rem;
+      }
+  }
+  .overallRating-viewAll {
+    text-align: right;
+    color: @gray-darkest;
+  }
+}
+.rating {
+  padding: 1.5rem .5rem;
+  margin-bottom: 2rem;
+  background: @rating-bg;
+  overflow: hidden;
+  .rating-subTitle {
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid @gray-light;
+  }
+  .rating-star {
+    padding: 2rem;
+    position: relative;
+    font-size: 1.7rem;
+    .stars-before {
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      color: @carousel-color;
+    }
+    .stars-after {
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      color: @brand-primary;
+      overflow: hidden;
+    }
+  }
+  .rating-title {
+    font-size: 1.6rem; 
+    font-weight: 600;
+  }
+  .rating-content {
+    line-height: 2.2rem;
+  }
+  .rating-user {
+    margin-top: 1.5rem;
+    .rating-userName {
+      color: @rating-userName;
+      margin-right: .4rem;
+    }
+  }
+}

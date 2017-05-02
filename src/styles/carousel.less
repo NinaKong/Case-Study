@@ -1,0 +1,32 @@
+//
+// Carousel
+// --------------------------------------------------
+.image-gallery {
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 43rem;
+  .image-gallery-thumbnails-wrapper {
+    margin-top: 70px;
+    .image-gallery-thumbnail {
+      width: 8.2rem;
+    }
+  }
+}
+.image-gallery-play-button::before {
+  display: none;
+}
+.image-gallery-fullscreen-button::before, .image-gallery-left-nav::before, .image-gallery-right-nav::before {
+  color: @carousel-color;
+  text-shadow: none;
+}
+
+.image-gallery-fullscreen-button:hover::before, .image-gallery-left-nav:hover::before, .image-gallery-right-nav:hover::before {
+  color: @gray-darker;
+  transform: scale(1.1);
+}
+.image-gallery-thumbnail.active {
+  border: 1px solid @carousel-color;
+}
+.image-gallery-left-nav, .image-gallery-right-nav {
+  font-size: 4.8rem;
+}

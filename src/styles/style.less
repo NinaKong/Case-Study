@@ -1,0 +1,29 @@
+// bootstrap
+@import "Bootstrap/bootstrap.less";
+
+// Core variables and mixins
+@import "variables.less";
+
+// Core CSS
+@import "global.less";
+
+// Components
+@import "buttons.less";
+@import "carousel.less";
+@import "rating.less";
+@import "query.less";
+
+#loader {
+    opacity: 0;
+    visibility: hidden;
+    .transition-property(opacity);
+    .transition-duration(5s);
+    .transition-delay(5s); 
+}
+
+#root {
+    opacity: 1;
+    .transition-property(opacity);
+    .transition-duration(5s);
+    .transition-delay(5s); 
+}

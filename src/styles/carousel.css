@@ -1,0 +1,15 @@
+.image-gallery {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 385px;
+}
+.image-gallery .image-gallery-thumbnails-wrapper {
+  margin-top: 70px;
+}
+.image-gallery .image-gallery-thumbnails-wrapper .image-gallery-thumbnail {
+  width: 82px;
+}
+.image-gallery-fullscreen-button::before,
+.image-gallery-play-button::before {
+  color: red;
+}
