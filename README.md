@@ -1,4 +1,5 @@
 #Case Study
+
 This is the case study using ReactJS, Bootstrap, and LESS
 
 ## Instructions 
