@@ -1,6 +1,6 @@
 #Case Study
 
-This is the case study using ReactJS, Bootstrap, and LESS
+Using ReactJS, Bootstrap, and LESS
 
 ## Instructions 
 
