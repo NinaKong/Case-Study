@@ -3,7 +3,6 @@ var React = require('react');
 var Button = React.createClass({
   render: function() {
     var purchasingChannelCode= this.props.singlePurchasingChannelCode;
-    console.log("code" + purchasingChannelCode);
     var PickUpInStore;
     var AddToCart;
     if(purchasingChannelCode == "0" || purchasingChannelCode == "2"){
