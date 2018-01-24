@@ -1,4 +1,4 @@
-## ShoppingCart-ReactJS
+## ReactJS-ShoppingCart
 
 Using ReactJS, Bootstrap, and LESS
 
